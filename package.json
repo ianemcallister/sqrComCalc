@@ -1,0 +1,23 @@
+{
+  "name": "sqrcomcalc",
+  "version": "1.0.0",
+  "description": "square commissions calculator",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianemcallister/sqrComCalc.git"
+  },
+  "author": "Ian McAllister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianemcallister/sqrComCalc/issues"
+  },
+  "homepage": "https://github.com/ianemcallister/sqrComCalc#readme",
+  "dependencies": {
+    "firebase-admin": "^8.6.1",
+    "square-connect": "^2.20190925.0"
+  }
+}
