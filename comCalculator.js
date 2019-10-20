@@ -33,12 +33,16 @@ function dailyCommissions(date) {
 		firebase.getAllEmployees()
 	];
 
-	//    WAIT FOR ALL PROMISES TO RESOLVE BEFORE PROCESSSING DATA
-    Promise.all(allDataPromises)
-    .then(function success(allDataArray) {
-    	resolve(allDataArray);
-    }).catch(function error(e) {
-    	reject(e);
+	//    RETURN ASYNC WORK
+	return new Promise(function dailyCommissionsPromise(resolve, reject) {
+
+		//    WAIT FOR ALL PROMISES TO RESOLVE BEFORE PROCESSSING DATA
+	    Promise.all(allDataPromises)
+	    .then(function success(allDataArray) {
+	    	resolve(allDataArray);
+	    }).catch(function error(e) {
+	    	reject(e);
+	    });
     });
 };
 

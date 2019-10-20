@@ -27,12 +27,29 @@ admin.initializeApp({
 
 //	DEFINE THE MODULE
 let firebaseAPI = {
+	getAllEmployees: getAllEmployees,
     test: function() { console.log('good firebase test'); }
 };
 
 //	DEFINE LOCAL VARIABLES
 
 //	NOTIFY PROGRESS
+
+//	DEFINE PUBLIC FUNCTIONS
+/*
+*	GET ALL EMPLOYEES
+*
+*	This function will reach out to our databse (firebase in this case) and return a list of employees with all their prertinant information.
+*
+*	@return {object} collection of employee data
+*/
+function getAllEmployees() {
+	//	DEFINE LOCAL VARIABLES
+	//	RETURN ASYNC WORK
+	return new Promise(function getAllEmployeesPromise(resolve, reject) {
+		resolve('good database test');
+	});
+};
 
 //  EXPORT THE MODULE
 module.exports = firebaseAPI;
