@@ -45,9 +45,18 @@ let firebaseAPI = {
 */
 function getAllEmployees() {
 	//	DEFINE LOCAL VARIABLES
+	let ref = admin.database().ref('employees');
+
 	//	RETURN ASYNC WORK
 	return new Promise(function getAllEmployeesPromise(resolve, reject) {
-		resolve('good database test');
+		//	ACCESS DATABASE VALUES
+		ref.once("value")
+		.then(function(snapshot) {
+
+			//	PASS THE VALUES BACK
+			resolve(snapshot.val());
+
+		});
 	});
 };
 

@@ -20,7 +20,7 @@ if(dateparam != undefined) {
 	.then(function success(commissionsReport) {
 
 		//	NOTIFY RESULTS
-		console.log(commissionsReport);
+		console.log(commissionsReport, "Commissions Reports");
 
 	}).catch(function error(e) {
 	    console.error('There was an error:', e);
