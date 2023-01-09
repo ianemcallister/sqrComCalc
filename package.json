@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ianemcallister/sqrComCalc#readme",
   "dependencies": {
-    "firebase-admin": "^8.6.1",
+    "firebase-admin": "^11.4.1",
     "square-connect": "^2.20190925.0"
   }
 }
